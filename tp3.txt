@@ -74,12 +74,15 @@ int main() {
  int tab[10] = {1, 3, 5, 7, 8, 10, 9, 11, 13, 20};
  element* L = creerListe();
  L = chargerListe(tab, 10); 
+ printf("Liste initiale: ");
  afficherListe(L);
  printf("\n_\n");
  L = supprimerEnFin(L);
+ printf("Liste après suppression en fin: ");
  afficherListe(L); 
  printf("\n_\n");
  L = ajouterEnDebut(L, 40);
+ printf("Liste après ajout en début: ");
  afficherListe(L); 
  printf("\n_\n");
  viderListe(L);
